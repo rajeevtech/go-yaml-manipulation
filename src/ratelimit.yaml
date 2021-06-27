@@ -1,0 +1,95 @@
+domain: api_rates
+descriptors:
+          - key: generic_key
+            value: hsi-ratelimit
+            descriptors:
+                - key: hsi-ratelimit-by-clients
+                  value: PRD1714_CTA
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+          - key: generic_key
+            value: iris-global-rate-limit
+            descriptors:
+                - key: iris-api-gateway-ratelimit-by-client-events-get
+                  value: PRD1570_DIAS
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client-events-post
+                  value: PRD1570_DIAS
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client-hosts-get
+                  value: PRD1570_DIAS
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client-hosts-post
+                  value: PRD1570_DIAS
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client-reclass
+                  value: PRD1570_DIAS
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client
+                  value: PRD1570_DIAS
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client-events-get
+                  value: PRD2162_CTA
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client-events-post
+                  value: PRD2162_CTA
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client-hosts-get
+                  value: PRD2162_CTA
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client-hosts-post
+                  value: PRD2162_CTA
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client-reclass
+                  value: PRD2162_CTA
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+                - key: iris-api-gateway-ratelimit-by-client
+                  value: PRD2162_CTA
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+          - key: iris-global-rate-limit-by-clients
+            value: PRD2162_CTA
+            rate_limit:
+                unit: minute
+                requests_per_unit: 3
+          - key: generic_key
+            value: inventory-ratelimit
+            descriptors:
+                - key: inventory-ratelimit-by-clients
+                  value: PRD1570_DIAS
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 25
+          - key: generic_key
+            value: apms-ratelimit
+            descriptors:
+                - key: apms-rate-limit-by-clients
+                  value: PRD2540_PRICEMANAGEMENT
+                  rate_limit:
+                    unit: second
+                    requests_per_unit: 1
+
